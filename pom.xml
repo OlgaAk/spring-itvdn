@@ -7,6 +7,7 @@
   <groupId>io.github.olgaak</groupId>
   <artifactId>spring_itvdn</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>spring_itvdn</name>
   <!-- FIXME change it to the project's website -->
