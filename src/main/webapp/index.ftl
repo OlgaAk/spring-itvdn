@@ -6,5 +6,8 @@
 </head>
 <body>
 <h1>Hello Olga!</h1>
+<br>
+
+<a href="hello">Go to hello page</a>
 </body>
 </html>
