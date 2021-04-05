@@ -10,14 +10,14 @@
 }
 
 .container {
-	width: 400px;
+	width: 700px;
   	display: grid;
-  	grid-template-columns: 1fr 1fr 2fr 1fr;
+  	grid-template-columns: 1fr 3fr 3fr 1fr;
 	grid-gap: 1px;
 	grid-auto-rows: 50px;
 	border-right: 1px solid gray;
 }
-.row{
+.cell{
 display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +31,13 @@ border-left: 1px solid gray;
 <!-- <table>
 		<tr>
 			<th>Id
-			<th>
+			</th>
 			<th>Name
-			<th>
+			</th>
 			<th>Email
-			<th>
+			</th>
 			<th>Age
-			<th>
+			</th>
 		</tr>
 		<#list users as user>
 		<tr>
@@ -48,15 +48,36 @@ border-left: 1px solid gray;
 		</tr>
 		</#list>
 	</table>  -->
+	
+	<form action="adduser" method="post">
+
+	<p>Add new user</p>
+	<label for="name">Name</label>
+	<input type="text" name="name" required>
+	<label for="email">Email</label>
+	<input type="text" name="email" required>
+		<label for="age">Age</label>
+	<input type="text" name="age" required>
+
+	<button type="submit">Add</button>
+	</form>
+	
 	<br>
 	<div class="container header">
-	<div class="row">Id</div><div class="row">Name</div><div class="row">Email</div><div class="row">Age</div>
+	<div class="cell">Id</div>
+	<div class="cell">Name</div>
+	<div class="cell">Email</div>
+	<div class="cell">Age</div>
 	</div>
 	<#list users as user>
 	<div class="container">
-	<span class="row">${user.id}</span><span class="row">${user.name}</span><span class="row">${user.email}</span><span class="row">${user.age}</span>
+	<span class="cell"><a href="user/${user.id}">${user.id}</a></span>
+	<span class="cell">${user.name}</span>
+	<span class="cell">${user.email}</span>
+	<span class="cell">${user.age}</span>
 	</div>
 	</#list>
+	
 
 </body>
 </html>

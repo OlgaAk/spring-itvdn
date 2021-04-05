@@ -8,6 +8,6 @@
 <h1>Hello Olga!</h1>
 <br>
 
-<a href="hello">Go to hello page</a>
+<a href="users">Go to users page</a>
 </body>
 </html>
