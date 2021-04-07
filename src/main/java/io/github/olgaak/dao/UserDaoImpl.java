@@ -4,10 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import io.github.olgaak.entity.User;
 import io.github.olgaak.mapper.UserMapper;
 
+@Repository
 public class UserDaoImpl implements UserDao {
 
 	public final JdbcTemplate jdbcTemplate;

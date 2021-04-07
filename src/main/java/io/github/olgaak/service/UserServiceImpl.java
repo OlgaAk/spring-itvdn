@@ -3,10 +3,12 @@ package io.github.olgaak.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import io.github.olgaak.dao.UserDao;
 import io.github.olgaak.entity.User;
 
+@Service
 public class UserServiceImpl implements UserService {
 
 	@Autowired
